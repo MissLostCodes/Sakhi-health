@@ -1,13 +1,16 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
-  apiKey: "AIzaSyCIhlAgG1gIhkXhvZbeXtps5EsZV5EJFmE",
-  authDomain: "sakhi-946a8.firebaseapp.com",
-  projectId: "sakhi-946a8",
-  storageBucket: "sakhi-946a8.firebasestorage.app",
-  messagingSenderId: "11744423887",
-  appId: "1:11744423887:web:ce00fa6a22e6a16c50ecba",
-  measurementId: "G-K47RKFZNL9"
+
+  apiKey: REACT_APP_FIREBASE_API_KEY,
+  authDomain: REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: .REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: REACT_APP_FIREBASE_MEASUREMENT_ID
+
+
 };
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
