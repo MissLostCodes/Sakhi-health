@@ -6,8 +6,11 @@ It helps to provide health support to such women by collaborating with ASHA work
 # How to run 
 backend ->
   $env:TEAM_API_KEY="your aixplain api key"
+  
   cd backend 
+  
   pip install -r requirements.txt 
+  
   uvicorn main:app --reload"
 
 frontend->
