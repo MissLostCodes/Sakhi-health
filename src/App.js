@@ -22,8 +22,6 @@ function App() {
           <Route path="/health-check" element={<HealthCheck />} />
           <Route path="/ngos" element={<NGOs />} />
         </Routes>
-        
-      
       </Router>
     </div>
   );
